@@ -48,14 +48,14 @@ body {
 
 nav {
     display: flex;
-    gap: 25px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 nav a {
     color: var(--black);
     text-decoration: none;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -131,14 +131,14 @@ nav a:hover {
     color: var(--white);
 }
 
-.properties {
-    padding: 85px 7%;
-    background: var(--cream);
+.categories {
+    padding: 65px 7% 30px;
+    background: var(--white);
 }
 
 .section-heading {
     text-align: center;
-    margin-bottom: 42px;
+    margin-bottom: 35px;
 }
 
 .section-heading h2,
@@ -153,11 +153,43 @@ nav a:hover {
     color: var(--gray);
 }
 
+.category-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.category-button {
+    border: 1px solid #dddddd;
+    background: var(--white);
+    color: var(--black);
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.category-button:hover,
+.category-button.active {
+    background: var(--black);
+    border-color: var(--black);
+    color: var(--gold);
+}
+
+.properties {
+    padding: 65px 7% 85px;
+    background: var(--cream);
+}
+
 .property-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-    max-width: 1150px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -176,41 +208,48 @@ nav a:hover {
 .property-card img {
     display: block;
     width: 100%;
-    height: 280px;
+    height: 230px;
     object-fit: cover;
 }
 
 .property-info {
-    padding: 24px;
+    padding: 22px;
 }
 
 .property-type {
     color: #9b7a37;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
-    letter-spacing: 2px;
-    margin-bottom: 8px;
+    letter-spacing: 1.5px;
+    margin-bottom: 9px;
 }
 
 .property-info h3 {
-    font-size: 22px;
-    margin-bottom: 8px;
+    font-size: 19px;
+    line-height: 1.4;
+    margin-bottom: 9px;
 }
 
 .location {
     color: var(--gray);
-    font-size: 14px;
-    margin-bottom: 14px;
+    font-size: 13px;
+    margin-bottom: 13px;
 }
 
 .price {
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 800;
     margin-bottom: 18px;
 }
 
 .add-to-cart {
     width: 100%;
+}
+
+#no-results {
+    text-align: center;
+    padding: 30px;
+    color: var(--gray);
 }
 
 .about {
@@ -246,7 +285,17 @@ footer {
     font-size: 13px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+    .property-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .header {
+        padding: 20px 5%;
+    }
+}
+
+@media (max-width: 600px) {
     .header {
         padding: 18px 5%;
         gap: 15px;
@@ -256,20 +305,33 @@ footer {
         order: 3;
         width: 100%;
         justify-content: space-between;
-        gap: 12px;
+        gap: 10px;
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .hero {
-        min-height: 480px;
-        padding: 65px 6%;
+        min-height: 470px;
+        padding: 60px 6%;
+    }
+
+    .categories {
+        padding: 50px 5% 25px;
+    }
+
+    .category-list {
+        gap: 9px;
+    }
+
+    .category-button {
+        padding: 10px 13px;
+        font-size: 12px;
     }
 
     .properties {
-        padding: 60px 5%;
+        padding: 45px 5% 60px;
     }
 
     .property-grid {
