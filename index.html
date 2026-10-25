@@ -3,103 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Solution | Find Your Dream Home</title>
+    <meta name="description" content="Discover mansions, duplexes, apartments, bungalows, penthouses and land with Real Estate Solution.">
+    <title>Real Estate Solution | Find Your Dream Property</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="header">
-        <a href="#" class="logo">REAL ESTATE<span>.</span></a>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#properties">Properties</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="cart">🛒 Cart (<span id="cart-count">0</span>)</div>
-    </header>
+<header class="header">
+    <a href="#home" class="logo">REAL ESTATE<span>.</span></a>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <p class="eyebrow">FIND YOUR PERFECT PLACE</p>
-                <h1>Discover a Place<br>You'll <span>Love to Live.</span></h1>
-                <p>Explore exceptional homes and properties for sale or rent. Your next chapter starts here.</p>
-                <a href="#properties" class="button">Explore Properties</a>
-            </div>
-        </section>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="#properties">Properties</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <section class="properties" id="properties">
-            <div class="section-heading">
-                <p class="eyebrow">OUR COLLECTION</p>
-                <h2>Featured Properties</h2>
-                <p>Handpicked homes for living, investing, and growing.</p>
-            </div>
+    <div class="cart">🛒 Cart (<span id="cart-count">0</span>)</div>
+</header>
 
-            <div class="property-grid">
-                <article class="property-card">
-                    <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Luxury modern house">
-                    <div class="property-info">
-                        <p class="property-type">FOR SALE</p>
-                        <h3>Luxury Modern Villa</h3>
-                        <p class="location">📍 Lekki, Lagos</p>
-                        <p class="price">₦185,000,000</p>
-                        <button class="button add-to-cart" data-name="Luxury Modern Villa" data-price="185000000">Add to Cart</button>
-                    </div>
-                </article>
+<main>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="eyebrow">YOUR PROPERTY, YOUR FUTURE</p>
+            <h1>Find a Home<br>That <span>Defines You.</span></h1>
+            <p>Explore exceptional Nigerian properties for sale and rent. From elegant apartments to magnificent mansions, your dream property awaits.</p>
+            <a href="#properties" class="button">Explore Properties</a>
+        </div>
+    </section>
 
-                <article class="property-card">
-                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Elegant contemporary home">
-                    <div class="property-info">
-                        <p class="property-type">FOR RENT</p>
-                        <h3>Elegant Family Home</h3>
-                        <p class="location">📍 Ikeja, Lagos</p>
-                        <p class="price">₦4,500,000 / year</p>
-                        <button class="button add-to-cart" data-name="Elegant Family Home" data-price="4500000">Add to Cart</button>
-                    </div>
-                </article>
+    <section class="categories" id="categories">
+        <div class="section-heading">
+            <p class="eyebrow">EXPLORE BY TYPE</p>
+            <h2>Find Your Property</h2>
+            <p>Discover the property type that suits your lifestyle.</p>
+        </div>
 
-                <article class="property-card">
-                    <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Beautiful luxury interior">
-                    <div class="property-info">
-                        <p class="property-type">FOR SALE</p>
-                        <h3>Contemporary Residence</h3>
-                        <p class="location">📍 Abuja, FCT</p>
-                        <p class="price">₦120,000,000</p>
-                        <button class="button add-to-cart" data-name="Contemporary Residence" data-price="120000000">Add to Cart</button>
-                    </div>
-                </article>
+        <div class="category-list">
+            <button class="category-button active" data-category="all">All Properties</button>
+            <button class="category-button" data-category="mansion">Mansions</button>
+            <button class="category-button" data-category="duplex">Duplexes</button>
+            <button class="category-button" data-category="bungalow">Bungalows</button>
+            <button class="category-button" data-category="apartment">Apartments</button>
+            <button class="category-button" data-category="penthouse">Penthouses</button>
+            <button class="category-button" data-category="land">Land</button>
+        </div>
+    </section>
 
-                <article class="property-card">
-                    <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Beautiful detached house">
-                    <div class="property-info">
-                        <p class="property-type">FOR RENT</p>
-                        <h3>Private Garden House</h3>
-                        <p class="location">📍 Gwarinpa, Abuja</p>
-                        <p class="price">₦3,000,000 / year</p>
-                        <button class="button add-to-cart" data-name="Private Garden House" data-price="3000000">Add to Cart</button>
-                    </div>
-                </article>
-            </div>
-        </section>
+    <section class="properties" id="properties">
+        <div class="section-heading">
+            <p class="eyebrow">OUR COLLECTION</p>
+            <h2>Featured Properties</h2>
+            <p>Explore selected properties across Nigeria.</p>
+        </div>
 
-        <section class="about" id="about">
-            <p class="eyebrow">WHY CHOOSE US</p>
-            <h2>Your Property Journey, Made Simple.</h2>
-            <p>We help you explore property opportunities with confidence, whether you're looking for a new home or your next investment.</p>
-        </section>
+        <div class="property-grid">
 
-        <section class="contact" id="contact">
-            <h2>Ready to Find Your Next Property?</h2>
-            <p>Contact our team to start your real estate journey.</p>
-            <a href="mailto:hello@example.com" class="button">Contact Us</a>
-        </section>
-    </main>
+            <article class="property-card" data-category="mansion">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Luxury mansion exterior" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">MANSION · FOR SALE</p>
+                    <h3>Luxury 7-Bedroom Mansion</h3>
+                    <p class="location">📍 Lekki, Lagos</p>
+                    <p class="price">₦450,000,000</p>
+                    <button class="button add-to-cart" data-name="Luxury 7-Bedroom Mansion" data-price="450000000">Add to Cart</button>
+                </div>
+            </article>
 
-    <footer>
-        <p>© 2026 Real Estate Solution. All rights reserved.</p>
-    </footer>
+            <article class="property-card" data-category="duplex">
+                <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Modern duplex house" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">DUPLEX · FOR SALE</p>
+                    <h3>Modern 5-Bedroom Duplex</h3>
+                    <p class="location">📍 Ikeja, Lagos</p>
+                    <p class="price">₦185,000,000</p>
+                    <button class="button add-to-cart" data-name="Modern 5-Bedroom Duplex" data-price="185000000">Add to Cart</button>
+                </div>
+            </article>
 
-    <script src="script.js"></script>
+            <article class="property-card" data-category="bungalow">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80" alt="Detached bungalow" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">BUNGALOW · FOR SALE</p>
+                    <h3>Elegant 3-Bedroom Bungalow</h3>
+                    <p class="location">📍 Ibadan, Oyo State</p>
+                    <p class="price">₦65,000,000</p>
+                    <button class="button add-to-cart" data-name="Elegant 3-Bedroom Bungalow" data-price="65000000">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="property-card" data-category="apartment">
+                <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80" alt="Contemporary apartment interior" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">APARTMENT · FOR RENT</p>
+                    <h3>Luxury 2-Bedroom Apartment</h3>
+                    <p class="location">📍 Victoria Island, Lagos</p>
+                    <p class="price">₦8,000,000 / year</p>
+                    <button class="button add-to-cart" data-name="Luxury 2-Bedroom Apartment" data-price="8000000">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="property-card" data-category="penthouse">
+                <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Premium penthouse living space" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">PENTHOUSE · FOR SALE</p>
+                    <h3>Exclusive Luxury Penthouse</h3>
+                    <p class="location">📍 Eko Atlantic, Lagos</p>
+                    <p class="price">₦320,000,000</p>
+                    <button class="button add-to-cart" data-name="Exclusive Luxury Penthouse" data-price="320000000">Add to Cart</button>
+                </div>
+            </article>
+
+            <article class="property-card" data-category="land">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80" alt="Open land suitable for development" loading="lazy">
+                <div class="property-info">
+                    <p class="property-type">LAND · FOR SALE</p>
+                    <h3>Residential Development Plot</h3>
+                    <p class="location">📍 Ibeju-Lekki, Lagos</p>
+                    <p class="price">₦35,000,000</p>
+                    <button class="button add-to-cart" data-name="Residential Development Plot" data-price="35000000">Add to Cart</button>
+                </div>
+            </article>
+
+        </div>
+        <p id="no-results" hidden>No properties found in this category.</p>
+    </section>
+
+    <section class="about" id="about">
+        <p class="eyebrow">ABOUT OUR COMPANY</p>
+        <h2>Your Property Journey Starts Here.</h2>
+        <p>Real Estate Solution helps people explore property opportunities, from family homes to luxury residences and land. Find a property that matches your needs and aspirations.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Ready to Find Your Next Property?</h2>
+        <p>Contact our team to discuss your property needs.</p>
+        <a href="mailto:hello@example.com" class="button">Contact Us</a>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Real Estate Solution. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-</html>
+    </html>
