@@ -147,3 +147,39 @@ document.querySelectorAll(".add-to-cart").forEach(function (button) {
 });
 
 filterProperties(false);
+// Connect the property inquiry form to EmailJS
+emailjs.init({
+    publicKey: "d8D1B-q220_SF5s_l"
+});
+
+const inquiryForm = document.getElementById("property-inquiry-form");
+
+if (inquiryForm) {
+    inquiryForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const status = document.getElementById("inquiry-status");
+        const submitButton = inquiryForm.querySelector('button[type="submit"]');
+
+        status.textContent = "Sending your inquiry...";
+        submitButton.disabled = true;
+
+        emailjs.sendForm(
+            "service_anrzbc8",
+            "template_lr46qkc",
+            inquiryForm
+        )
+        .then(function () {
+            status.textContent = "Your inquiry has been sent successfully!";
+            inquiryForm.reset();
+        })
+        .catch(function (error) {
+            console.error("EmailJS error:", error);
+            status.textContent =
+                "Unable to send your inquiry. Please try again or email us directly.";
+        })
+        .finally(function () {
+            submitButton.disabled = false;
+        });
+    });
+}
