@@ -162,17 +162,61 @@
     </section>
 
     <section class="contact" id="contact">
-        <p class="eyebrow">GET IN TOUCH</p>
-        <h2>Let's Talk About Your Next Property</h2>
-        <p>Contact us for property enquiries and further information.</p>
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h2>Let's Talk About Your Next Property</h2>
+    <p>Contact us for property enquiries and further information.</p><div class="contact-options">
+    <a class="button" href="mailto:sirquadri01@gmail.com">📧 Email Us</a>
+    <a class="button" href="tel:08069510815">📞 Call Us</a>
+    <a class="button" href="https://wa.me/2348069510815" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+</div>
 
-        <div class="contact-options">
-            <a class="button" href="mailto:sirquadri01@gmail.com">📧 Email Us</a>
-            <a class="button" href="tel:08069510815">📞 Call Us</a>
-            <a class="button" href="https://wa.me/2348069510815" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
-        </div>
+<p class="contact-email">sirquadri01@gmail.com</p>
 
-        <p class="contact-email">sirquadri01@gmail.com</p>
+<div class="contact-form">
+    <h3>Make a Property Inquiry</h3>
+    <p>Interested in a property? Send us a message.</p>
+
+    <form id="property-inquiry-form">
+        <input
+            type="text"
+            name="from_name"
+            placeholder="Your Full Name"
+            required
+        >
+
+        <input
+            type="email"
+            name="from_email"
+            placeholder="Your Email Address"
+            required
+        >
+
+        <input
+            type="tel"
+            name="phone"
+            placeholder="Your Phone Number"
+            required
+        >
+
+        <input
+            type="text"
+            name="property_name"
+            placeholder="Property You Are Interested In"
+            required
+        >
+
+        <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+        ></textarea>
+
+        <button type="submit">Send Inquiry</button>
+
+        <p id="inquiry-status" aria-live="polite"></p>
+    </form>
+</div>
+
     </section>
 </main>
 
