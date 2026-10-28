@@ -439,3 +439,133 @@ footer p + p {
         margin: 25px auto;
     }
         }
+/* Professional Property Inquiry Form */
+
+.contact-form {
+    width: 100%;
+    max-width: 700px;
+    margin: 45px auto 0;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #222222;
+    border: 1px solid rgba(201, 164, 93, 0.35);
+    border-radius: 14px;
+    text-align: left;
+}
+
+.contact-form h3 {
+    margin: 0 0 12px;
+    color: #c9a45d;
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact-form > p {
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 14px 15px;
+    box-sizing: border-box;
+    border: 1px solid #555555;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #222222;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.contact-form input {
+    min-height: 50px;
+}
+
+.contact-form textarea {
+    grid-column: 1 / -1;
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #c9a45d;
+    border-color: #c9a45d;
+}
+
+.contact-form button {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-height: 52px;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 7px;
+    background: #c9a45d;
+    color: #171717;
+    font-family: inherit;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #dfbd79;
+}
+
+.contact-form button:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+}
+
+#inquiry-status {
+    grid-column: 1 / -1;
+    margin: 0;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .contact-form {
+        width: 100%;
+        padding: 20px 16px;
+        margin-top: 30px;
+    }
+
+    .contact-form h3 {
+        font-size: 23px;
+    }
+
+    .contact-form form {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 14px;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form button,
+    #inquiry-status {
+        grid-column: 1;
+    }
+
+    .contact-form input {
+        min-height: 50px;
+    }
+
+    .contact-form textarea {
+        min-height: 130px;
+    }
+}
