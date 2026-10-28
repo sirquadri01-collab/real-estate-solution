@@ -569,3 +569,32 @@ footer p + p {
         min-height: 130px;
     }
 }
+/* Keep the website header visible while scrolling */
+header {
+position: sticky;
+top: 0;
+z-index: 1000;
+background: #111111;
+}
+
+/* Make the shopping cart easier to see */
+#cart,
+.cart,
+.cart-count {
+font-size: 22px;
+font-weight: 800;
+}
+
+/* Make the cart count stand out */
+.cart-count {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+min-width: 28px;
+min-height: 28px;
+padding: 4px;
+box-sizing: border-box;
+border-radius: 50%;
+background: #c9a45d;
+color: #111111;
+}
