@@ -597,4 +597,31 @@ box-sizing: border-box;
 border-radius: 50%;
 background: #c9a45d;
 color: #111111;
+} 
+/* FIX: Keep header visible while scrolling */
+.header {
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+/* FIX: Make the cart bigger and clearer */
+.header .cart {
+    font-size: 20px !important;
+    font-weight: 800 !important;
+}
+
+/* FIX: Highlight the cart number */
+#cart-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 30px;
+    min-height: 30px;
+    padding: 4px 8px;
+    border-radius: 50%;
+    background: #c9a45d;
+    color: #171717 !important;
+    font-size: 18px !important;
+    font-weight: 800 !important;
 }
