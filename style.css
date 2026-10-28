@@ -625,3 +625,37 @@ color: #111111;
     font-size: 18px !important;
     font-weight: 800 !important;
 }
+/* FINAL FIX: Sticky header and visible shopping cart */
+
+body > header.header {
+position: -webkit-sticky !important;
+position: sticky !important;
+top: 0 !important;
+z-index: 9999 !important;
+background: #ffffff !important;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+body > header.header .cart {
+display: inline-flex !important;
+align-items: center;
+gap: 6px;
+font-size: 20px !important;
+font-weight: 800 !important;
+white-space: nowrap;
+}
+
+body > header.header #cart-count {
+display: inline-flex !important;
+align-items: center;
+justify-content: center;
+min-width: 32px;
+min-height: 32px;
+padding: 4px 8px;
+border-radius: 50%;
+background: #c6a15b !important;
+color: #171717 !important;
+font-size: 18px !important;
+font-weight: 800 !important;
+line-height: 1;
+}
